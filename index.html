@@ -16,10 +16,10 @@
         <div class="inputs">
             <input placeholder="title" type="text" id="title">
             <div class="price">
-                <input onkeyup="getTotal" placeholder="price" type="number" id="price">
-                <input onkeyup="getTotal" placeholder="taxes" type="number" id="taxes">
-                <input onkeyup="getTotal" placeholder="ads" type="number" id="ads">
-                <input onkeyup="getTotal" placeholder="discount" type="number" id="discount">
+                <input onkeyup="getTotal()" placeholder="price" type="number" id="price">
+                <input onkeyup="getTotal()" placeholder="taxes" type="number" id="taxes">
+                <input onkeyup="getTotal()" placeholder="ads" type="number" id="ads">
+                <input onkeyup="getTotal()" placeholder="discount" type="number" id="discount">
                 <small id="total"></small>
             </div>
             <input placeholder="count" type="number" id="count">
@@ -34,7 +34,7 @@
                     <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
                 </div>
             </div>
-            <div onclick="deleteAll()" 
+            <div id="deleteAll" onclick="deleteAll()" 
             id="deleteAll">
                 
             </div>
